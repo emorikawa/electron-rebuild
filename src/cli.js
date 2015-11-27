@@ -37,7 +37,7 @@ if (!argv.v) {
 
     pkg = require(pkgJson);
 
-    argv.v = pkg.version;
+    argv.v = pkg.electronVersion;
   } catch (e) {
     console.error("Unable to find electron-prebuilt's version number, either install it or specify an explicit version");
     process.exit(-1);
